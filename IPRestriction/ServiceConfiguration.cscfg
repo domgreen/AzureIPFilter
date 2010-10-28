@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="IPRestriction" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="WebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="DiagnosticsConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="FilterInBoundIP" value="true" />
+      <Setting name="AllowedIPAddresses" value="127.0.0.1" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
